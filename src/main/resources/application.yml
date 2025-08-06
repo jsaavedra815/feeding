@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: feeding
+
+server:
+  port: 8081

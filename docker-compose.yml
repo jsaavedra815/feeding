@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  animal-service:
+    image: animal-service:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - animalnet
+  feeding-service:
+    image: feeding-service:latest
+    ports:
+      - "8081:8081"
+    networks:
+      - animalnet
+networks:
+  animalnet:
+    driver: bridge
